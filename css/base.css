@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* Reset box-model
+------------------------------------------ */
+* {
+  box-sizing: border-box;
+}
+::before,
+::after {
+  box-sizing: inherit;
+}
+html {
+  height: 100%;
+  overflow-y: scroll; /* All browsers without overlaying scrollbars */
+  font-size: 62.5%;
+  font-size: 10px;
+  -webkit-text-size-adjust: 100%; /* iOS 8+ */
+}
+body {
+  /*
+  font-size: 12px;
+  font-size: 1.2rem;
+  */
+  line-height: 1.5;
+  /* ゴシック体 */
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "游ゴシック", "Yu Gothic", YuGothic, Verdana, Arial, "メイリオ", Meiryo, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* 明朝体 */
+  /*
+  font-family: Georgia, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "游明朝", "Yu Mincho", YuMincho, "HG明朝E", "MS P明朝", "MS PMincho", "MS 明朝", "MS Mincho", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  */
+  /* 中国語（簡体字） */
+  /*
+  font-family: "Hiragino Sans GB","Hiragino Sans GB W3","STXihei","Microsoft YaHei", "微软雅黑",'SimSun', sans-serif;
+  */
+}
+@media screen and (max-width:480px) {
+  html {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+  body {
+    min-width: 100%;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+/*
+a, a img {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover, a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+*/
+a:focus { outline: none; }
+img {
+  vertical-align: top;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  max-width: 100%;
+}
+ul, ol { list-style: none; }
+
+/* Form */
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="password"],
+form input[type="search"],
+form input[type="submit"],
+form input[type="reset"],
+form input[type="button"],
+form input[type="url"],
+form select,
+form textarea,
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+	border: none;
+	border-radius: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+	font-size: 100%;
+}
+form select,
+form input[type="checkbox"],
+form input[type="radio"] {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-input-placeholder { color: #bcbcbc; }
+::-moz-placeholder { color: #bcbcbc; }
+:-ms-input-placeholder { color: #bcbcbc; }
+
+/* Measures Against Float */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
