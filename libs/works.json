@@ -1,5 +1,10 @@
 {
-  "slide1": [
+  "swiper01": [
+    {
+      "link": "https://coolverre.com/",
+      "image": "coolverre",
+      "name": "オートグラス株式会社"
+    },
     {
       "link": "https://3mind.co.jp/",
       "image": "3mind",
@@ -61,7 +66,7 @@
       "name": "株式会社ZAISAN"
     }
   ],
-  "slide2": [
+  "swiper02": [
     {
       "link": "https://chuoyuki.co.jp/",
       "image": "chuoyuki",
