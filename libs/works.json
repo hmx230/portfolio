@@ -1,5 +1,5 @@
 {
-  "slide1": [
+  "swiper01": [
     {
       "link": "https://coolverre.com/",
       "image": "coolverre",
@@ -66,7 +66,7 @@
       "name": "株式会社ZAISAN"
     }
   ],
-  "slide2": [
+  "swiper02": [
     {
       "link": "https://chuoyuki.co.jp/",
       "image": "chuoyuki",
