@@ -135,4 +135,5 @@ const sliderOption2 = {
     prevEl: '.swiper-button-prev',
   },
   */
+
 }

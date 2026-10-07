@@ -68,14 +68,24 @@ body {
   margin: auto;
 }
 .about-flex {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 4%;
 }
-.about-flex p {
+
+.about-text {
+  position: relative;
   font-size: 1.4rem;
   line-height: 1.8;
-  padding: 0 5% 0 0;
+  opacity: 1;
+  transition: opacity .1s ease-in;
+  cursor: pointer;
+  user-select: none;
 }
+.about-text.is-fading {
+  opacity: 0;
+}
+
 .about-flex figure {
   flex-shrink: 0;
   aspect-ratio: 1 / 1;
@@ -96,18 +106,25 @@ body {
 }
 
 @media screen and (max-width:840px) {
-  .about-flex { flex-direction: column; }
-  .about-flex figure { width: 50vw; }
-  .about-flex p {
+  .about-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .about-text {
     padding: 0;
     margin: 0 0 5%;
   }
-  .about-flex figure { aspect-ratio: 4 / 3; }
+  .about-flex figure {
+    width: 50vw;
+    aspect-ratio: 4 / 3;
+  }
 }
 
 @media screen and (max-width:375px) {
+  .about-text { font-size: 1.3rem; }
   .about-flex figure { width: 70vw; }
-  .about-flex p { font-size: 1.3rem; }
 }
 
 /* Skills
